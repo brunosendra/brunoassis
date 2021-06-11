@@ -1,0 +1,17 @@
+---
+title: "teste"
+author: "Bruno Sendra de Assis"
+date: "11/06/2021"
+output: html_document
+---
+teste
+
+```{r}
+library("tidyverse")
+library("nycflights13")
+
+flights %>% ggplot() + 
+  geom_density(aes(dep_delay)) +
+  xlim(0, 100)
+```
+
